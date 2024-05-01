@@ -1,4 +1,4 @@
-package com.example.dto;
+package com.example.scientificconference.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

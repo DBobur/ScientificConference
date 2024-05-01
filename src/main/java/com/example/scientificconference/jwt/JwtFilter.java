@@ -1,8 +1,5 @@
-package com.example.activeuser.jwt;
+package com.example.scientificconference.jwt;
 
-import com.example.activeuser.entity.Checking;
-import com.example.activeuser.entity.User;
-import com.example.activeuser.repo.CheckingRepository;
 import io.jsonwebtoken.Claims;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

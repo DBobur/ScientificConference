@@ -1,6 +1,6 @@
-package com.example.dto;
+package com.example.scientificconference.dto;
 
-import com.example.entity.Role;
+import com.example.scientificconference.entity.Role;
 import lombok.*;
 
 import java.util.List;
