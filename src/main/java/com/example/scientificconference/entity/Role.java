@@ -10,6 +10,7 @@ import org.jetbrains.annotations.NotNull;
 @NoArgsConstructor
 @Builder
 @Entity
+@Table(name = "role")
 public class Role extends BaseEntity{
     @NotNull
     private String name;

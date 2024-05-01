@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 1483
+    url: jdbc:postgresql://localhost:5432/scientific_conference
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+secret:
+  key: ApeVFjUOyTmk7XYwgcYwIEsix1mALAsQhftYQqWHE8P6kcnqbZv0Uxj9HduKEvjXzz0sVYCG0ZjSBtmxadtAiQ==
+

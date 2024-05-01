@@ -13,13 +13,13 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "conferences")
+@Table(name = "conference")
 public class Conference extends BaseEntity{
     @Column(unique = true)
     @NotNull
     private String name;
     @NotNull
-    private LocalDateTime tileToBe;
+    private LocalDateTime timeToBe;
     @NotNull
     private String placeToBe;
 }

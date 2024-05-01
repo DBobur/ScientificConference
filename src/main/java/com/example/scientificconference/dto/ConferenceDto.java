@@ -14,6 +14,6 @@ public class ConferenceDto {
     @NotNull
     private String name;
     @NotNull
-    private LocalDateTime tileToBe;
+    private LocalDateTime timeToBe;
     @NotNull
     private String placeToBe;}

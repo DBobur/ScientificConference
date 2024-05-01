@@ -1,4 +1,4 @@
-package com.example.scientificconference.repo;
+package com.example.scientificconference.repository;
 
 import com.example.scientificconference.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;

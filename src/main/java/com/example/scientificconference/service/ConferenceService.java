@@ -2,7 +2,7 @@ package com.example.scientificconference.service;
 
 import com.example.scientificconference.dto.ConferenceDto;
 import com.example.scientificconference.entity.Conference;
-import com.example.scientificconference.repo.ConferenceRepository;
+import com.example.scientificconference.repository.ConferenceRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
