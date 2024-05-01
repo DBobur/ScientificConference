@@ -1,4 +1,4 @@
-package com.example.activeuser.jwt;
+package com.example.scientificconference.jwt;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

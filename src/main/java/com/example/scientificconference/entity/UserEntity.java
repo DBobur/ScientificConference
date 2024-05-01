@@ -1,7 +1,6 @@
-package com.example.entity;
+package com.example.scientificconference.entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.jetbrains.annotations.NotNull;
 
