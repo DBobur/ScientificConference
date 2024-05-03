@@ -32,6 +32,14 @@ public class ConferenceController {
             ){
         return ResponseEntity.ok(conferenceService.update(id,updateDto));
     }
+    @DeleteMapping("/delete")
+    public ResponseEntity<String> delete(
+            @RequestParam UUID id
+            //@PathVariable String id
+    ){
+        conferenceService.delete(id);
+        return ResponseEntity.ok("Item with ID " + id + " deleted successfully");
+    }
 
     @GetMapping("/get-all")
     public ResponseEntity<List<Conference>> getAll() {

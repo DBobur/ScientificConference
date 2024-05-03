@@ -12,10 +12,14 @@ import java.util.UUID;
 @Getter
 @Setter
 public abstract class BaseEntity {
+    {
+        state = true;
+    }
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected UUID id;
     @Column(name = "create_date")
     @CreationTimestamp
     protected LocalDateTime createDate;
+    protected boolean state;
 }

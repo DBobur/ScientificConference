@@ -4,6 +4,7 @@ import com.example.scientificconference.dto.LoginDto;
 import com.example.scientificconference.dto.RegisterDto;
 import com.example.scientificconference.entity.UserEntity;
 import com.example.scientificconference.service.AuthService;
+import jdk.jfr.Category;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

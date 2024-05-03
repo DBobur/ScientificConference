@@ -8,6 +8,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -29,7 +30,23 @@ public class ConferenceService {
         return conferenceRepository.save(conference);
     }
 
+
     public List<Conference> getAll(){
         return conferenceRepository.findAll();
+    }
+
+    public void delete(UUID id){
+        /*Optional<Conference> byId = conferenceRepository.findById(id);
+        if (byId.isPresent()){
+            Conference conference = byId.get();
+            conference.setState(false);
+            conferenceRepository.save(conference);
+            return true;
+        }
+        return false;*/
+        Conference byId = conferenceRepository.findById(id).orElseThrow(
+                RuntimeException::new
+        );
+        conferenceRepository.delete(byId);
     }
 }
