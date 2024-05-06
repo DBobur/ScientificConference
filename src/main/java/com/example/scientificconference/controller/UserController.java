@@ -16,18 +16,12 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
     private final AuthService authService;
     @PostMapping("/register")
-    public ResponseEntity<String> register(@RequestBody RegisterDto registerDto) {
-        authService.register(registerDto);
-        return ResponseEntity.status(HttpStatus.CREATED).body("User registered successfully");
+    public ResponseEntity<LoginDto> register(@RequestBody RegisterDto registerDto) {
+        return ResponseEntity.ok(authService.register(registerDto));
     }
 
     @PostMapping("/login")
-    public ResponseEntity<String> loginUser(@RequestBody LoginDto loginDto) {
-        UserEntity login = authService.login(loginDto);
-        if (login != null) {
-            return ResponseEntity.ok("User login successfully");
-        } else {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid username or password");
-        }
+    public ResponseEntity<UserEntity> loginUser(@RequestBody LoginDto loginDto) {
+        return ResponseEntity.ok(authService.login(loginDto));
     }
 }
