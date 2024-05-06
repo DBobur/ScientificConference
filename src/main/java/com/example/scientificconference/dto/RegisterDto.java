@@ -11,8 +11,8 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class RegisterDto {
+    private String name;
     private String email;
-    private String username;
     private String password;
     private List<Role> roleList;
 }

@@ -16,9 +16,9 @@ import java.util.List;
 public class UserEntity extends BaseEntity{
     @Column(unique = true)
     @NotNull
-    private String email;
+    private String name;
     @NotNull
-    private String username;
+    private String email;
     @NotNull
     private String password;
     @Column(columnDefinition = "boolean default true")
